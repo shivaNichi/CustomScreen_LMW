@@ -1,0 +1,156 @@
+$DATETIME 2020/04/16 05:30.17
+$DSET-OnCreate
+    GMEM mem;      
+    mem = GMEMCreate("GMEM2", 4);
+    GMEMSetLong(mem, 0, 0);   
+GCSChangeActiveFocus(-1,"DSET");       
+$End
+$DSET-OnDelete
+    GMEM mem;
+    mem = GMEMSelect("GMEM2");
+    GMEMDelete(mem);
+$End
+
+$DSET-OnKeyPress
+    GMEM mem;
+    long _lWinNo;    'Window number(current)
+    long _lWinNoOld; 'Window number(last)
+    long _lShiftKey; 'SHIFT-KEY State
+     long nVal;
+    mem = GMEMSelect("GMEM2");
+    String _str;
+    _lWinNo = GMEMGetLong(mem, 0);
+    _lWinNoOld = _lWinNo;
+    _lShiftKey = LUPARAM & H1;
+   long I;
+ GCSTextboxGetString(-1,"DSET",_str);
+   
+
+   GMEM sta;
+     long _Val;
+sta = GMEMCreate("GMEM3", 4);
+
+    'Go back CNC Function
+  if((LLPARAM == 112) && (_lShiftKey == 1)) 'Go to [Monitr] Function
+        GCSGEShowPanel(1000);
+    elseif((LLPARAM == 113) && (_lShiftKey == 1)) 'Go to [Setup] Function
+        GCSGEShowPanel(2000);
+    elseif((LLPARAM == 114) && (_lShiftKey == 1)) 'Go to [Edit] Function
+        GCSGEShowPanel(3000);
+    elseif((LLPARAM == 115) && (_lShiftKey == 1)) 'Go to [Diagn] Function
+        GCSGEShowPanel(4000);
+    elseif((LLPARAM == 116) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSGEShowPanel(5000);
+    elseif((LLPARAM == 117) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSGEShowPanel(6000);
+  elseif(LLPARAM==118)
+    GCSGeshowpanel(0);
+   elseif(LLPARAM==119)
+    GCSGeshowpanel(1);
+   elseif(LLPARAM==120)
+    GCSGeshowpanel(3);
+    elseif(LLPARAM==121)
+    GCSGeshowpanel(1000);
+    endif
+   'Cursor move
+    if(LLPARAM==40)
+        _lWinNo = _lWinNo + 1;
+        if(_lWinNo > 4)
+            _lWinNo = 1;
+        endif
+    elseif(LLPARAM==38)
+        _lWinNo = _lWinNo - 1;
+        if(_lWinNo < 1)
+            _lWinNo = 4;
+        endif
+    endif
+    if(_lWinNoOld == 1)
+        GCSSetVisibleStatus(-1, "GPicture0001", 0);
+    elseif(_lWinNoOld == 2)
+        GCSSetVisibleStatus(-1, "GPicture0002", 0);
+     elseif(_lWinNoOld == 3)
+        GCSSetVisibleStatus(-1, "GPicture0003", 0);
+     elseif(_lWinNoOld == 4)
+         GCSSetVisibleStatus(-1, "GPicture0004", 0);
+    elseif(_lWinNoOld == 5)
+         GCSSetVisibleStatus(-1, "GPicture0005", 0);
+    elseif(_lWinNoOld == 6)
+         GCSSetVisibleStatus(-1, "GPicture0006", 0);
+    elseif(_lWinNoOld == 7)
+         GCSSetVisibleStatus(-1, "GPicture0007", 0);
+    elseif(_lWinNoOld == 8)
+         GCSSetVisibleStatus(-1, "GPicture0008", 0);
+    elseif(_lWinNoOld == 9)
+         GCSSetVisibleStatus(-1, "GPicture0009", 0);
+    elseif(_lWinNoOld == 10)
+         GCSSetVisibleStatus(-1, "GPicture0010", 0);
+     endif
+    if(_lWinNo == 1)
+        GCSSetVisibleStatus(-1, "GPicture0001", 1);
+    elseif(_lWinNo == 2)
+        GCSSetVisibleStatus(-1, "GPicture0002", 1);
+    elseif(_lWinNo == 3)
+        GCSSetVisibleStatus(-1, "GPicture0003", 1);
+    elseif(_lWinNo == 4)
+        GCSSetVisibleStatus(-1, "GPicture0004", 1);
+     elseif(_lWinNo == 5)
+        GCSSetVisibleStatus(-1, "GPicture0005", 1);
+     elseif(_lWinNo == 6)
+        GCSSetVisibleStatus(-1, "GPicture0006", 1);
+      elseif(_lWinNo == 7)
+        GCSSetVisibleStatus(-1, "GPicture0007", 1);
+       elseif(_lWinNo == 8)
+        GCSSetVisibleStatus(-1, "GPicture0008", 1);
+       elseif(_lWinNo == 9)
+        GCSSetVisibleStatus(-1, "GPicture0009", 1);
+       elseif(_lWinNo == 10)
+        GCSSetVisibleStatus(-1, "GPicture0010", 1);
+    endif
+      GMEMSetLong(mem, 0, _lWinNo);
+      'variable enter
+ if (LLPARAM == 13) 
+if(_lWinNo == 1)
+                  GCSNCDataTextboxSetString(-1,"T1",_str);
+                  GCSTextBoxSetString(-1,"DSET",""); 
+  elseif(_lWinNo == 2)
+               GCSNCDataTextboxSetString(-1,"T2",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+  elseif(_lWinNo == 3)
+               GCSNCDataTextboxSetString(-1,"T3",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+    elseif(_lWinNo == 4)
+               GCSNCDataTextboxSetString(-1,"T4",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+     elseif(_lWinNo == 5)
+   GCSNCDataTextboxSetString(-1,"T5",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+       elseif(_lWinNo ==6)
+               GCSNCDataTextboxSetString(-1,"T6",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+       elseif(_lWinNo == 7)
+               GCSNCDataTextboxSetString(-1,"T7",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+        elseif(_lWinNo == 8)
+               GCSNCDataTextboxSetString(-1,"T8",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+     elseif(_lWinNo == 9)
+   GCSNCDataTextboxSetString(-1,"T9",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+     elseif(_lWinNo == 10)
+   GCSNCDataTextboxSetString(-1,"T10",_str);
+                GCSTextBoxSetString(-1,"DSET",""); 
+      endif
+      endif
+
+if ((LLPARAM == 36) && (_lShiftKey == 1))
+GCSTextBoxSetString(-1,"DSET",""); 
+Endif
+$End
+
+
+
+
+
+
+
+

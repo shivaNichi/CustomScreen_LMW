@@ -1,0 +1,10 @@
+; GPROJECT.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY "GPROJECT.DLL"
+DESCRIPTION  'GPROJECT Control Dynamic Link Library"
+
+EXPORTS
+		; 明示的なエクスポートはここへ記述できます
+		GCSGetModuleScreen			@1
+		GCSGetScreenProperty		@2
+		GCSGetVersion				@3

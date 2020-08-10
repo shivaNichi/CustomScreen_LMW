@@ -1,0 +1,177 @@
+#if !defined _GCOUTPUT2_HPP_
+#define _GCOUTPUT2_HPP_
+#include "genifa.h"
+#include "GWin.h"
+#include "GCPanel.hpp"
+
+
+class GCOutput2 : public GCPanel
+{
+public:
+
+	//{{CONTROL_ID
+	enum {
+		KEYACTION = 374,
+		KEY_OUTPUT1 = 356,
+		KEY_INPUT = 357,
+		KEY_CIRCUITS = 358,
+		KEY_PLC_BITS = 359,
+		KEY_HISTORY = 360,
+		KEY_VERSION = 361,
+		KEY_CUT_O_METER = 362,
+		GBUTTON00363 = 363,
+		GBUTTON00364 = 364,
+		KEY_BACK = 365,
+		GLABEL00003 = 3,
+		GLABEL00145 = 145,
+		GLABEL00147 = 147,
+		GNCPLCBUTTON00260 = 260,
+		GNCPLCBUTTON00261 = 261,
+		GNCPLCBUTTON00262 = 262,
+		GNCPLCBUTTON00263 = 263,
+		GNCPLCBUTTON00264 = 264,
+		GNCPLCBUTTON00265 = 265,
+		GNCPLCBUTTON00266 = 266,
+		GNCPLCBUTTON00267 = 267,
+		GNCPLCBUTTON00268 = 268,
+		GNCPLCBUTTON00269 = 269,
+		GNCPLCBUTTON00270 = 270,
+		GNCPLCBUTTON00271 = 271,
+		GNCPLCBUTTON00272 = 272,
+		GNCPLCBUTTON00273 = 273,
+		GNCPLCBUTTON00274 = 274,
+		GNCPLCBUTTON00275 = 275,
+		GNCPLCBUTTON00340 = 340,
+		GNCPLCBUTTON00341 = 341,
+		GNCPLCBUTTON00342 = 342,
+		GNCPLCBUTTON00343 = 343,
+		GNCPLCBUTTON00344 = 344,
+		GNCPLCBUTTON00345 = 345,
+		GNCPLCBUTTON00346 = 346,
+		GNCPLCBUTTON00347 = 347,
+		GNCPLCBUTTON00348 = 348,
+		GNCPLCBUTTON00349 = 349,
+		GNCPLCBUTTON00350 = 350,
+		GNCPLCBUTTON00351 = 351,
+		GNCPLCBUTTON00352 = 352,
+		GNCPLCBUTTON00353 = 353,
+		GNCPLCBUTTON00354 = 354,
+		GNCPLCBUTTON00355 = 355,
+		GNXALARMMESSAGE00000 = 0,
+		GNXMONITORSTATUS00002 = 2,
+		GNXTIME00001 = 1,
+		GPICTURE00005 = 5,
+		ICON1 = 366,
+		ICON2 = 367,
+		ICON3 = 368,
+		ICON4 = 369,
+		ICON5 = 370,
+		ICON6 = 371,
+		ICON7 = 372,
+		GSRECT00048 = 48,
+		GSRECT00050 = 50,
+		GSRECT00052 = 52,
+		GSRECT00053 = 53,
+		GSRECT00054 = 54,
+		GSRECT00055 = 55,
+		GSRECT00056 = 56,
+		GSRECT00057 = 57,
+		GSRECT00058 = 58,
+		GSRECT00059 = 59,
+		GSRECT00060 = 60,
+		GSRECT00061 = 61,
+		GSRECT00062 = 62,
+		GSRECT00063 = 63,
+		GSRECT00064 = 64,
+		GSRECT00065 = 65,
+		GSRECT00144 = 144,
+		GSRECT00146 = 146,
+		GSRECT00180 = 180,
+		GSRECT00181 = 181,
+		GSRECT00182 = 182,
+		GSRECT00183 = 183,
+		GSRECT00184 = 184,
+		GSRECT00185 = 185,
+		GSRECT00186 = 186,
+		GSRECT00187 = 187,
+		GSRECT00188 = 188,
+		GSRECT00189 = 189,
+		GSRECT00190 = 190,
+		GSRECT00191 = 191,
+		GSRECT00192 = 192,
+		GSRECT00193 = 193,
+		GSRECT00194 = 194,
+		GSRECT00195 = 195,
+		GSRECT00308 = 308,
+		GSRECT00309 = 309,
+		GSRECT00310 = 310,
+		GSRECT00311 = 311,
+		GSRECT00312 = 312,
+		GSRECT00313 = 313,
+		GSRECT00314 = 314,
+		GSRECT00315 = 315,
+		GSRECT00316 = 316,
+		GSRECT00317 = 317,
+		GSRECT00318 = 318,
+		GSRECT00319 = 319,
+		GSRECT00320 = 320,
+		GSRECT00321 = 321,
+		GSRECT00322 = 322,
+		GSRECT00323 = 323,
+		GSRECT00324 = 324,
+		GSRECT00325 = 325,
+		GSRECT00326 = 326,
+		GSRECT00327 = 327,
+		GSRECT00328 = 328,
+		GSRECT00329 = 329,
+		GSRECT00330 = 330,
+		GSRECT00331 = 331,
+		GSRECT00332 = 332,
+		GSRECT00333 = 333,
+		GSRECT00334 = 334,
+		GSRECT00335 = 335,
+		GSRECT00336 = 336,
+		GSRECT00337 = 337,
+		GSRECT00338 = 338,
+		GSRECT00339 = 339,
+		MSGBOX = 4,
+	};
+	//}}CONTROL_ID
+
+	//{{PUBLIC_METHOD
+	GCOutput2();
+	virtual ~GCOutput2();
+
+	virtual short CreateChildren();
+	virtual GPropertyInfo* GetPropertyInfo(const GBaseWindowProperty* pImport, unsigned short* pGPropertyInfoCnt);
+	//}}PUBLIC_METHOD
+	
+	//{{CALLBACK_METHOD
+	long KEYACTIONOnCreate(unsigned short usMessage, long lLParam, long lUParam );
+	long KEYACTIONOnKeyPress(unsigned short usMessage, long lLParam, long lUParam );
+	long KEYACTIONOnTimer(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_BACKOnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_CIRCUITSOnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_CUT_O_METEROnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_HISTORYOnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_INPUTOnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_OUTPUT1OnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_PLC_BITSOnClick(unsigned short usMessage, long lLParam, long lUParam );
+	long KEY_VERSIONOnClick(unsigned short usMessage, long lLParam, long lUParam );
+	//}}CALLBACK_METHOD
+	void ClearWarningMessage();
+	void ScreenTransition(short ScreenNo);
+	void SetWarningMessage(int warnnum);
+	void ReadIconStatus();
+protected:
+	//{{PROTECTED_METHOD
+	GCDefCBMP()
+	//}}PROTECTED_METHOD
+};
+
+extern "C"{
+void GCIDeleteGCOutput2( GBaseObject *pObject );
+short GCINewGCOutput2( GBaseObject *pObject );
+}
+#endif /* _GCOUTPUT2_HPP_ */
+

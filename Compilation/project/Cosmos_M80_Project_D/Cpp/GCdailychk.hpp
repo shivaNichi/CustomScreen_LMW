@@ -1,0 +1,86 @@
+#if !defined _GCDAILYCHK_HPP_
+#define _GCDAILYCHK_HPP_
+#include "genifa.h"
+#include "GWin.h"
+#include "GCPanel.hpp"
+
+
+class GCdailychk : public GCPanel
+{
+public:
+
+	//{{CONTROL_ID
+	enum {
+		GBUTTON00006 = 6,
+		GBUTTON00007 = 7,
+		GBUTTON00008 = 8,
+		GBUTTON00009 = 9,
+		GBUTTON00010 = 10,
+		GBUTTON00011 = 11,
+		GBUTTON00012 = 12,
+		GBUTTON00013 = 13,
+		GBUTTON00014 = 14,
+		GBUTTON00015 = 15,
+		GBUTTON00018 = 18,
+		GBUTTON00045 = 45,
+		GBUTTON00046 = 46,
+		GBUTTON00047 = 47,
+		GBUTTON00048 = 48,
+		GBUTTON00049 = 49,
+		GBUTTON00050 = 50,
+		GBUTTON00051 = 51,
+		GBUTTON00052 = 52,
+		GBUTTON00053 = 53,
+		GBUTTON00054 = 54,
+		GBUTTON00055 = 55,
+		GBUTTON00056 = 56,
+		GBUTTON00057 = 57,
+		GBUTTON00058 = 58,
+		GBUTTON00059 = 59,
+		GLABEL00003 = 3,
+		GNCPLCBUTTON00060 = 60,
+		GNCPLCBUTTON00061 = 61,
+		GNCPLCBUTTON00062 = 62,
+		GNCPLCBUTTON00063 = 63,
+		GNCPLCBUTTON00064 = 64,
+		GNCPLCBUTTON00065 = 65,
+		GNCPLCBUTTON00066 = 66,
+		GNCPLCBUTTON00067 = 67,
+		GNXALARMMESSAGE00000 = 0,
+		GNXMONITORSTATUS00002 = 2,
+		GNXTIME00001 = 1,
+		GPICTURE00005 = 5,
+		GPICTURE00068 = 68,
+		GPICTURE00069 = 69,
+		GPICTURE00070 = 70,
+		GPICTURE00071 = 71,
+		GPICTURE00072 = 72,
+		GPICTURE00073 = 73,
+		GPICTURE00074 = 74,
+		GTEXTBOX00004 = 4,
+	};
+	//}}CONTROL_ID
+
+	//{{PUBLIC_METHOD
+	GCdailychk();
+	virtual ~GCdailychk();
+
+	virtual short CreateChildren();
+	virtual GPropertyInfo* GetPropertyInfo(const GBaseWindowProperty* pImport, unsigned short* pGPropertyInfoCnt);
+	//}}PUBLIC_METHOD
+	
+	//{{CALLBACK_METHOD
+	//}}CALLBACK_METHOD
+
+protected:
+	//{{PROTECTED_METHOD
+	GCDefCBMP()
+	//}}PROTECTED_METHOD
+};
+
+extern "C"{
+void GCIDeleteGCdailychk( GBaseObject *pObject );
+short GCINewGCdailychk( GBaseObject *pObject );
+}
+#endif /* _GCDAILYCHK_HPP_ */
+

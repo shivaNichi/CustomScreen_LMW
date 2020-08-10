@@ -1,0 +1,107 @@
+20200724
+1.Added and consolidated all required NCD2 screens to project 
+2.CSV files to be loaded in to /PRG/MMACRO are in ARM.zip
+
+20200708
+New screen
+1. Added new System info screen , all required data to be read from SYSTEMIFO.CSV file
+2. Added new "System info" button in Init screen.
+
+20200707
+Addition of new screens 
+1. Implemented Spindle setting screen
+2. Implemented Spindle orientation setting screen
+3. Implemented Spindle Axis stroke setting screen
+4. Implemented MTB password authorization screen
+Modification
+1. Password of preventive screen is hardcoded (changed from reading from file)
+
+20200618 
+Main screen, running letters font is changed for better look.
+20200611 
+Modifications 
+  Main screen
+1.Removed header and footer
+2.Running text added below LMW logo image
+  Initialization screen
+1.Removed footer, changed alarm display text box background color to screen background color
+2.In header removed 00-00-0000 PLC object
+3.Scrolling text added below image, scroll text color made same as logo color
+4.On custom screen open if PLC alarm present then redirecting to alarm window directly.
+  All screens
+1.Touch function enabled for all screens
+2.Removed note and alarm in all screen
+  Preventive Maintenance screen
+1.In Preventive screen elapsed time is calculated from system time instead of power on time
+2.Emg object moved to header
+  Alarm screen
+1. Added buttons to transit all screen
+
+20200601
+1.Fixed issue related to Graph update , only APLC is released
+20200527
+1.Modification to The Preventive Maintenance screen
+	Removed MC subsystem key,Maintain home,Eos button
+2.Modified button name IOLISTL to LATCH RELAY
+3.Modified header name Alarm history to alarm and Removed NC alarm object
+
+20200525
+1.Re created installer using new make file. 
+
+20200515
+1.Added following screens and functionalities from S&T project
+	Main screen (Just for S/C navigation)
+	Copy CSV file screen
+	Alarm screen
+	IO screen
+	M-code screen
+	G-code screen
+	Latch relay 
+
+20200512
+1. Developed screen : 
+	Preventive maintenance and APLC installer
+2. In lc used below memory location 
+	111/1 to 111/20 for power time and set time and
+	111/20-111/28 to generate flag 1,2,3(1<75,2>75,3 for completed)
+	111/30 to write overall percentage
+	R 28600-R 28608 for NC meter in custom screen
+
+20200728
+1. Developed screen : 
+
+	MTB Password seeting screen
+	EOS Screen
+	System info2 screen
+	MTB Spindle speed setting screen
+	MTB Spindle Orientation screen
+	MTB Axis screen
+	Systom Info screen
+	Coolant screen
+	Lubrication screen
+	Hydralic screen
+	Arm screen
+	Magazine screen
+	Chip conveyor screen
+	power calculatior screen
+	MR Rate calculation
+	Spindle status screen
+
+2. list of .csv files attached in MMACRO need to store in Machine /PRG/MMACRO memory 
+
+	IOLIST
+	IOLISTL
+	ALRAM
+	ARM
+	CHIPCONVEY
+	HYDRAULIC
+	LUBRICATION
+	COOLANT
+	MAG
+	MCODE
+	GCODE
+	SPINDLE
+	SYSTEMINFO
+	
+
+

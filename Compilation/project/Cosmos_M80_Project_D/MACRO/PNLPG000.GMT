@@ -1,0 +1,56 @@
+$DATETIME 2018/09/18 09:54.57
+$main-OnTimer
+GCSChangeActiveFocus(-1,"main");
+
+String lxx;
+long xx;
+
+  GCSNCPLCTextboxGetString(-1,"loadx", lxx);
+  xx= ATOL(lxx);
+     GCSProgressbarSetValue(-1, "load1",xx);
+   GCSProgressbarSetValue(-1, "load2",xx);
+   GCSProgressbarSetValue(-1, "load3",xx);
+
+String val;
+long st;
+GCSNCDataTextboxGetString(-1,"prgval", val);
+st=atol(val);
+GCSProgressbarSetValue(-1, "prgst",st);
+
+$End
+$main-OnKeyPress
+long _lMainKey; 
+ long _lShiftKey;
+ _lShiftKey = LUPARAM & H1;
+  _lMainKey=LLPARAM;
+
+    'Go back CNC Function
+    if((LLPARAM == 112) && (_lShiftKey == 1)) 'Go to [Monitr] Function
+        GCSGEShowPanel(1000);
+    elseif((LLPARAM == 113) && (_lShiftKey == 1)) 'Go to [Setup] Function
+        GCSGEShowPanel(2000);
+    elseif((LLPARAM == 114) && (_lShiftKey == 1)) 'Go to [Edit] Function
+        GCSGEShowPanel(3000);
+    elseif((LLPARAM == 115) && (_lShiftKey == 1)) 'Go to [Diagn] Function
+        GCSGEShowPanel(4000);
+    elseif((LLPARAM == 116) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSGEShowPanel(5000);
+     elseif( (_lMainKey==121)&& (_lShiftKey == 0)) ;
+GcsGeshowpanel(1000);
+     elseif( (_lMainKey==112)&& (_lShiftKey == 0)) ;
+GcsGeshowpanel(1);
+     elseif( (_lMainKey==117)&& (_lShiftKey == 0)) ;
+GcsGeshowpanel(51);
+         endif;
+$End
+
+$GButton00063-OnClick
+GcsGeshowpanel(1);
+$End
+$GButton00098-OnClick
+GcsGeshowpanel(1);
+$End
+$GButton00185-OnClick
+GcsGeshowpanel(51);
+$End
+

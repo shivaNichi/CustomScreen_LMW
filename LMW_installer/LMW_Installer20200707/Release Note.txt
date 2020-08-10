@@ -1,0 +1,8 @@
+20200707
+
+Modification
+1. Password of preventive screen is hardcoded (changed from reading from file)
+2. Implemented MTB password authorization screen
+3. Implemented Spindle setting screen
+4. Implemented Spindle orientation setting screen
+5. Implemented Spindle Axis stroke setting screen

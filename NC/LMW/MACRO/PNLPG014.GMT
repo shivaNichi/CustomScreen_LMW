@@ -1,0 +1,31 @@
+$DATETIME 2020/04/17 04:09.29
+  $BASE1-OnCreate
+  GCSChangeActiveFocus(-1,"BASE1");
+  GCSGEShowPanel(0001);
+  $End
+
+ $BASE1-OnDelete
+    GMEM mem;
+    mem = GMEMSelect("GMEM1");
+    GMEMDelete(mem);
+ $End
+   long _lMainKey; 
+  _lShiftKey = LUPARAM & H1;
+  _lMainKey=LLPARAM;
+
+      'Go back CNC Function
+  if((LLPARAM == 112) && (_lShiftKey == 1)) 'Go to [Monitr] Function
+        GCSGEShowPanel(1000);
+    elseif((LLPARAM == 113) && (_lShiftKey == 1)) 'Go to [Setup] Function
+        GCSGEShowPanel(2000);
+    elseif((LLPARAM == 114) && (_lShiftKey == 1)) 'Go to [Edit] Function
+        GCSGEShowPanel(3000);
+    elseif((LLPARAM == 115) && (_lShiftKey == 1)) 'Go to [Diagn] Function
+        GCSGEShowPanel(4000);
+    elseif((LLPARAM == 116) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSGEShowPanel(5000);
+    elseif((LLPARAM == 117) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSGEShowPanel(6000);
+     endif
+ 
+   $End

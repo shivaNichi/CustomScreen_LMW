@@ -1,0 +1,7 @@
+Information	The conversion of the character sequence resource has completed.
+WARNING		Did not import this font resource because another resource of the same property already exsits.											ID_FONT00000
+Information	The conversion of the font resource has completed.
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00057
+Information	The conversion of the image resource has completed.
+Information	The conversion of the solid frame resource has completed.
+Information	The conversion of the file name resource has completed.

@@ -1,0 +1,64 @@
+ALARM ,COMMENT ,REMEDY 
+F1,1001 MAGAZINE NOT REFERENCED,Please select the reference mode and press CW push button |1.Please check the magazine home sensor and supply source in 24V signal X243=1|2. The pot up not up please check the solenoid valve and pot up signal 24V X246=1 | 3. The magazine pot up and down malfunction
+F2,1002 ARM NOT IN HOME POSITION,"1. Please check the arm position|2. Please check the ATC arm sensor|3. Please check the signal cable damage or alarm signal status (X23E,X24D,X24E)|4. Check the arm brake "
+F3,1003 ATC MAINTENANCE MODE ON,1.ATC Function in completed  
+F4,1004 SPINDLE NOT CLAMPED,1. Please check the clamp limit switch and clamp limit switch distance.|2. Check the air pressure|3. Please check the clamp limit switch signal cable condition.|4. Please check the PMC status signal X23D     
+F5,1005 POT NOT IN UP POSITION,Please check the pot up sensor and diagnose the status X236=1
+F6,1006 ARM BRAKE RELEASED,  Arm break Switch off
+F7,1007 Z AXIS INTERLOCK WITH ARM HOME BYPASSED,Check whether the ATC bye pass  is enable |This alarm is displayed when cycle start button  is pressed when ATC interrupt and ATC bye pass enabled
+F8,1008 SPINDLE OIL COOLER ALARM,Check spindle cooler unit phase sequence |check cooler oil level .|check cooler feedback input (X23A)
+F9,1009 REFERENCE MAGAZINE,"Check magazine  home position ,magazine not home position do magazine reference ,check magazine home input (X243)"
+F10,1010 AIR PRESSURE ALARM,1. Check the FRL unit air pressure should be maintained as 6 bars.|2. Check the pressure switch setting|3. Check the air pressure input  (X238)
+F11,1011 REFERENCE Z AXIS,Reference first Z axis  
+F12,1012 REFERENCE ALL AXES,Press MLK button. After release The lock all axis need ref
+F13,1013 SPINDLE MOTOR OVERLOAD,Check whether the spindle load    value exceed the given value  |Check the tool wear
+F14,1014 MAGAZINE REFERENCE TIMEOUT, 1.kindly check magazine output SSR|2.kindly check magazine motor break.
+F15,1015 ATC CYCLE INTERRUPTED.SELECT HANDLE PRESS O.T PB,Set handle mode press reset than press OT
+F16,1016 SPINDLE SPEED OVER,Check the spindle speed exceed 6000RPM|(The machine without chiller should be maintain the speed below 6000RPM)
+F24,PRESS  SERVO READY,Press SVO button machine is ready
+F25,SPINDLE RPM NOT OK// PLC SWITCH 6,1. Please check the spindle speed exceed 6000RPM|2.Check parameter 108028 |(The machine without chiller should be maintain the speed below 6000RPM)
+F30,1030 CALLED TOOL NOT OK,1. Please check called tool is in tool table|2. Ensure that calling to is in given tool limit 
+F31,1031 NO TOOL IN SPINDLE,"1.spindle tool already '0',command tool (T0M06)|2.Command tool properly. Check tool table."
+F32,1032 CALLED TOOL NOT PRESENT IN MAGAZ,1. Please check called tool is in tool table|2. Ensure that calling to is in given tool limit 
+F33,1033 DOUBLE ENTRY IN MAG,1.Kindly check spindle tool repeated in tool table .|2.kindly  rearrange the tool table
+F34,1034 MAG ROTATION T CODE TIMEOUT,"1. Check magazine  CW, CCW output|2. Kindly check MAG CW, CCW SSR"
+F35,1035 POT UP/DOWN T CODE TIMEOUT,1.kindly check pot up/down sensor input |2.kindly check pot up down air connection.
+F36,1036 SPINDLE TOOL DOUBLE ENTRY IN MAG,1.Kindly check spindle tool repeated in tool table .|2.kindly  rearrange the tool table
+F37,1037 MAGAZINE REFERENCE TIMEOUT,1.kindly check magazine output SSR|2.kindly check magazine motor break
+F40,1040 Z NOT IN SECOND REF,1.Atc  tool change Need to z axis  2nd reference  condition
+F41,1041 SPINDLE NOT ORIENT,1.Kindly check orientation sensor  cable|2.Kindly check  sensor  mounting.|3. Kindly check orient pos                     
+F42,1042 ARM NOT IN POSITION,"1. Please check the arm position|2. Please check the ATC arm sensor|3. Please check the signal cable damage or alarm signal status (X23E,X24D,X24E)|4. Check the arm brake "
+F43,1043 T CODE NOT COMPLETED,1.Kindly check POT UP pos|2.Kindly check  pot up sensor |3. Kindly check  ARM home pos               
+F44,1044 WAITING TOOL NOT EQUAL CALLED TL, 1.Kindly check  tool table  data|2. call STM SERVICE Engineer
+F49,1049 M6 TOOL CHANGE OPERATION TIMEOUT,A3.0 TO A4.2 Any alarm came to this alarm also came
+F50,1050 POT DOWN TIMEOUT,1.kindly check pot down sensor input  | 2.kindly check pot up down air connection.
+F51,1051 ARM TO SPINDLE UNCLAMP TIMEOUT,"1.kindly check Arm reach 60* inputs|2.kindly check spindle clamp/de clamp inputs(x8.7-on,x8.5,x8.6 -off)|3.kindly check arm SSR  Outputs"
+F52,1052 SPINDLE UNCLAMP TIMEOUT,1.kindly check spindle clamp/de clamp inputs|2.kindly check Spindle clamp/de clamp coil Outputs
+F53,1053 ARM MIDDLE TIMEOUT,"1.kindly check spindle clamp/ de clamp inputs|2.kindly check arm ssr and middle pos inputs(x8.5-x8.4,x8,6-off"
+F54,1054 POT UP TIMEOUT,1.kindly check pot down inputs |2.Kindly check pot up down coil point
+F55,1055 MAG INDEX TIMEOUT,1.Kindly check pot up down sensors|2.kindly check magazine out put and SSR 
+F56,1056 POT DOWN TIMEOUT,1..Kindly check pot up down sensors|2.kindly check magazine  Position sensor|3. kindly check pot up down coil points|4.kindly check z axis 2nd ref pos
+F57,1057 ARM TO SPINDLE CLAMP TIMEOUT,"1.Kindly check arm clamp position sensors(x8.6-on,x8.5,x8.7-off),2.kindly check arm motor SSR and outputs,3.kindly check z axis 2nd ref pos"
+F58,1058 SPINDLE CLAMP TIMEOUT,"1.Kindly check clamp position sensors(x8.6-on,x8.5,x8.7-off),2.kindly check clamp output And clamp inputs ,3.kindly check z axis 2nd ref pos"
+F59,1059 ARM HOME TIMEOUT,"1.Kindly check home position sensors(x8.6,x8.5,x8.7-on,2.kindly check clamp inputs ,3.Kindly check  z axis 2nd ref pos"
+F60,1060 POT UP TIMEOUT,"1.Kindly check home position sensors(x8.6,x8.5,x8.7-on, 2.kindly check pot up down outputs"
+F61,1061 INDEXER NOT ENABLED,1.First  enable  plc switch 
+F62,1062 Z NOT IN REFERENCE,1.indexer rotate . Need to z axis reference condition
+F63,1063 INDEXER PARITY ERROR,Check the Indexer parity sensor fault kindly check the input
+F64,1064 B CODE NOT OK,B code call out of range .kindly check number of station.
+F65,1065 B CODE TIMEOUT,"1. Check parameter 8132-#2=1,2.Check indexer SSR output,3. Check indexer  out puts"
+F66,1066 INDEXER THERMAL FAULT,"1. Check  Indexer motor thermal ,2.Check indexer motor thermal  inputs"
+F67,1067 INDEXER CLAMP FAULT,Check  Indexer turret clamp condition
+F80,1080 LUB LEVEL NOT OK,"1. Check the lube oil level.,2. Check the lube level input (X3.2),3. Check the any short (24V) in (X3.2),4. Check the float switch condition and hose damage"
+F81,1081 LUB PRESSURE NOT REACHED,"1 .Check the lube pressure in gauge (Visual) ,2. If pressure is not reaching mean, have to check lube hose damage"
+F82,1082 LUB PRESSURE NOT DROPPED,"1. Check the lube Pressure  input (X3.7),2. Check the wiring,  if X3.7 is continuously ON this message will display "
+F83,1083 MST ON,This message will display whenever we switch ON the MST button
+F84,1084 MLK ON,"1. This message will display whenever we press the MLK button,2. MLK is used to lock all axis Movement"
+F85,1085 ZLK ON,"1. This message will display whenever we press the ZLK button,2. ZLK is used to lock  Z axis Movement"
+F86,1086 TAP INTERRUPTED.SELECT MDA AND PRESS TAP RETRACT.,"Select MDI mode,Press the tap retract       button"
+F91,1091 TOOL TABLE DATA INITIALIZED FOR SMALL TOOLS,"1. This message will display whenever we call M200 ,2. M200 is used to initialize the small tool"
+F92,1092 TOOL TABLE DATA INITIALIZED FOR 1 BIG TOOLS,"1. This message will display whenever we call M201 ,2. M200 is used to initialize the 1 big too"
+F93,1093 TOOL TABLE DATA INITIALIZED FOR 2 BIG TOOLS,"1. This message will display whenever we call M202 ,2. M200 is used to initialize the 2 big tools"
+F94,1094 TOOL TABLE DATA INITIALIZED FOR 3 BIG TOOLS,"1. This message will display whenever we call M203 ,2. M200 is used to initialize the 3 big tools"
+F95,1095 TOOL TABLE DATA INITIALIZED FOR 4 BIG TOOLS,"1. This message will display whenever we call M2004,2. M200 is used to initialize the 4 big tools"
+F101,BREAK WIRING FAIL CHECK X230,1.Check FFR  connections and  supply voltage

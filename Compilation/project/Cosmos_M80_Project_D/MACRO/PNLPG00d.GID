@@ -1,0 +1,17 @@
+GNXAlarmMessage00000,0,GNXAlarmMessage
+GNXTime00001,1,GNXTime
+GNXMonitorStatus00002,2,GNXMonitorStatus
+GLabel00003,3,GLabel
+GPicture00005,5,GPicture
+GButton00006,6,GButton
+GButton00007,7,GButton
+GButton00008,8,GButton
+GButton00009,9,GButton
+GButton00010,10,GButton
+GButton00011,11,GButton
+GButton00012,12,GButton
+GButton00013,13,GButton
+GButton00014,14,GButton
+GButton00015,15,GButton
+GNCTrendGraph00060,60,GNCTrendGraph
+main,62,GBasicControl

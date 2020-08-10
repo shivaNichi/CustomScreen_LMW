@@ -1,0 +1,7 @@
+#if !defined _GCCOSMOS_M80_PROJECT_D_HPP_
+#define _GCCOSMOS_M80_PROJECT_D_HPP_
+
+
+
+
+#endif /* _GCCOSMOS_M80_PROJECT_D_HPP_ */

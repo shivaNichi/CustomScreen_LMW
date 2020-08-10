@@ -1,0 +1,18 @@
+20200611 
+
+Modification
+
+Main screen
+1. Remove header and footer
+2. Add text below LMW logo image and make it running
+Intialization screen
+1.Remove footer but change the text box background color
+2. In header remove 00-00-0000 plc object
+3.add text below image it's should scroll
+All scroll text color should same as logo color
+1. Enable touch function in all screens
+2. Remove note and alarm in all screen and make design clean
+3.In Preventive screen calculate elapsed time from  power on time to system date and time
+4. Move Emg object to header
+5.plc alaram present need to jump to alarm window
+6. Adding all screen transtition in alram screen

@@ -1,0 +1,11 @@
+
+
+Open paramaeter 
+111/1 to 111/50(preventive mainatainance)
+
+M Series
+M5010 to M5036(Preventive bits)
+
+R series used
+R28600 to R28609(Preventive  meter)
+R28620 to R28623 (Store MTB Data)

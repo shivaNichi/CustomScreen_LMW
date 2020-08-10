@@ -1,0 +1,34 @@
+Information	The conversion of the character sequence resource has completed.
+WARNING		Did not import this font resource because another resource of the same property already exsits.											ID_FONT00001
+WARNING		Did not import this font resource because another resource of the same property already exsits.											ID_FONT00034
+WARNING		Did not import this font resource because another resource of the same property already exsits.											ID_FONT00000
+Information	The conversion of the font resource has completed.
+ERROR		Import failed because 2 or more files in the import destination have the same name.													logo1
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00001
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00638
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00640
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00611
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00651
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00684
+ERROR		Import failed because 2 or more files in the import destination have the same name.													ID_IMAGE00639
+ERROR		Import failed because 2 or more files in the import destination have the same name.													MDI
+ERROR		Import failed because 2 or more files in the import destination have the same name.													MEM
+ERROR		Import failed because 2 or more files in the import destination have the same name.													RPD
+ERROR		Import failed because 2 or more files in the import destination have the same name.													jog
+ERROR		Import failed because 2 or more files in the import destination have the same name.													inc
+ERROR		Import failed because 2 or more files in the import destination have the same name.													zrn
+ERROR		Import failed because 2 or more files in the import destination have the same name.													hand
+ERROR		Import failed because 2 or more files in the import destination have the same name.													key
+ERROR		Import failed because 2 or more files in the import destination have the same name.													lubnot
+ERROR		Import failed because 2 or more files in the import destination have the same name.													lubokk
+ERROR		Import failed because 2 or more files in the import destination have the same name.													clntman
+ERROR		Import failed because 2 or more files in the import destination have the same name.													clntauto
+ERROR		Import failed because 2 or more files in the import destination have the same name.													caution
+ERROR		Import failed because 2 or more files in the import destination have the same name.													spcw
+ERROR		Import failed because 2 or more files in the import destination have the same name.													spccw
+ERROR		Import failed because 2 or more files in the import destination have the same name.													spstp
+ERROR		Import failed because 2 or more files in the import destination have the same name.													sporn
+ERROR		Import failed because 2 or more files in the import destination have the same name.													toolch
+Information	The conversion of the image resource has completed.
+Information	The conversion of the solid frame resource has completed.
+Information	The conversion of the file name resource has completed.

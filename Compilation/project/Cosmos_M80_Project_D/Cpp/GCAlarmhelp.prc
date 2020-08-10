@@ -1,0 +1,380 @@
+
+GCClassCBMP(GCAlarmhelp)
+	GCDefCBMsg(GM_CB_ONKEYPRESS, GINPUTBOX00029, GINPUTBOX00029OnKeyPress )
+	GCDefCBMsg(GM_CB_ONCREATE, GINPUTBOX00029, GINPUTBOX00029OnCreate )
+GCEndClassCBMP()
+
+static const GFocusInformation pGNXAlarmMessage00000FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGNXTime00001FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGNXMonitorStatus00002FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGLabel00003FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGTextBox00004FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00005FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGHtmlBrowser00017FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00018FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00019FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00020FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00021FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00022FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00023FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00024FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00025FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00026FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGButton00027FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGLabel00028FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGInputBox00029FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00030FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00031FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00032FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00033FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00034FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00035FocusInformation =
+{
+	0,
+	NULL
+};
+
+static const GFocusInformation pGPicture00036FocusInformation =
+{
+	0,
+	NULL
+};
+
+
+static const GButtonProperty pGButtonpProperty[10] =
+{
+
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00018, 1, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00018FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00019, 65, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00019FocusInformation}}, ID_STRING00315,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00020, 129, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00020FocusInformation}}, ID_STRING00037A,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00021, 193, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00021FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00022, 257, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00022FocusInformation}}, ID_STRING01158,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00023, 321, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00023FocusInformation}}, ID_STRING01159,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00024, 385, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00024FocusInformation}}, ID_STRING01156,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00025, 449, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00025FocusInformation}}, ID_STRING01157,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00026, 513, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00026FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GBUTTON, GCAlarmhelp::GBUTTON00027, 577, 436, 63, 44, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGButton00027FocusInformation}}, ID_STRING01056,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0,{{NO_DRAW, RGB32(192,220,192), RGB32(192,220,192)}, ID_IMAGE01061},{{NO_DRAW, RGB32(0,170,173), RGB32(0,170,173)}, ID_IMAGE01062},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060},{{NO_DRAW, RGB32(192,192,192), RGB32(192,192,192)}, ID_IMAGE01060}, GBTN_ACT_MOMENTARY, GBTN_DISP_IMAGE, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}
+};
+static const GHtmlBrowserPropertyEx pGHtmlBrowserpProperty[1] =
+{
+
+	{{{{GHTMLBROWSER, GCAlarmhelp::GHTMLBROWSER00017, 2, 52, 638, 335, GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGHtmlBrowser00017FocusInformation}}, RGB32(0,0,0), RGB32(255,251,240), RGB32(0,0,255), ID_BORDER00030, ID_FONT00000, 0, mcode, GSBAR_DISP_NORMAL, RGB32(192,192,192), RGB32(192,192,192), RGB32(0,0,0), Background, Background, Background, Background, Background, Background, Background, Background, RGB32(0,0,0), RGB32(192,192,192), 16, ID_BORDER00003}, 1, 0, 0, 0}
+};
+static const GInputBoxProperty pGInputBoxpProperty[1] =
+{
+
+	{{{GINPUTBOX, GCAlarmhelp::GINPUTBOX00029, 227, 390, 118, 22, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGInputBox00029FocusInformation}}, ID_FONT00000, 0, RGB32(255,255,255), RGB32(0,0,0), RGB32(255,255,255), RGB32(0,0,0), RGB32(255,255,255), 5, FILL_BACK_COLOR, GFOCUS_EFFECT_CURSOR, GCURSOR_TYPE_NORMAL, RGB32(0,0,0), 0, 0, 0, 0, RGB32(99,107,222), RGB32(255,255,255), 0,{RGB32(0,0,0), GCAPTION_POS_RIGHT, GCAPTION_POS_CENTER, 0, 0, 0, 0}, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+};
+static const GLabelProperty pGLabelpProperty[2] =
+{
+
+	{{{GLABEL, GCAlarmhelp::GLABEL00003, 0, 30, 250, 20, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGLabel00003FocusInformation}}, ID_STRING01154,{RGB32(0,0,255), GCAPTION_POS_LEFT, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00001,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}} ,
+	{{{GLABEL, GCAlarmhelp::GLABEL00028, 3, 391, 221, 21, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGLabel00028FocusInformation}}, ID_STRING01155,{RGB32(255,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}
+};
+static const GNXAlarmMessageProperty pGNXAlarmMessagepProperty[1] =
+{
+
+	{{{{GNXALARMMESSAGE, GCAlarmhelp::GNXALARMMESSAGE00000, 299, 416, 340, 20, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGNXAlarmMessage00000FocusInformation}}, 1, 1, 0, 0}, RGB32(120,120,120), GNORMAL_FONT, 0, 500, 0, 0, GPROPERTY_COLOR, 0, 0}
+};
+static const GNXMonitorStatusProperty pGNXMonitorStatuspProperty[1] =
+{
+
+	{{{{GNXMONITORSTATUS, GCAlarmhelp::GNXMONITORSTATUS00002, 0, 416, 64, 20, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGNXMonitorStatus00002FocusInformation}}, 1, 1, 0, 0}, RGB32(120,120,120), GMM_OFF, GNORMAL_FONT, 0, 0, RGB32(230,230,230), 0, 4, 3, GNC_THEME_COLOR, 0, 0, 0, 0}
+};
+static const GNXTimeProperty pGNXTimepProperty[1] =
+{
+
+	{{{{GNXTIME, GCAlarmhelp::GNXTIME00001, 132, 416, 64, 20, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGNXTime00001FocusInformation}}, 1, 1, 0, 0}, RGB32(230,230,230), RGB32(120,120,120), GMM_OFF, GNORMAL_FONT, GNC_THEME_COLOR, 0, 0, 0, 0, 0, 0}
+};
+static const GDesign pGPicture00005Design[1] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , logo1}
+};
+
+static const GVector pGPicture00005Vector[1] = {
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00030Design[7] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , MDI},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , MEM},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , RPD},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , jog},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , inc},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , zrn},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , hand}
+};
+
+static const GVector pGPicture00030Vector[7] = {
+	{0 , 0, 1, 10000, 1},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00031Design[2] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , KEY},
+	{{ NO_DRAW , RGB32(0,173,170), RGB32(0,173,170)} , Background}
+};
+
+static const GVector pGPicture00031Vector[2] = {
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00032Design[2] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , lubnot},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , lubokk}
+};
+
+static const GVector pGPicture00032Vector[2] = {
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00033Design[2] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , clntman},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , clntauto}
+};
+
+static const GVector pGPicture00033Vector[2] = {
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00034Design[2] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , caution},
+	{{ NO_DRAW , RGB32(0,173,170), RGB32(0,173,170)} , Background}
+};
+
+static const GVector pGPicture00034Vector[2] = {
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00035Design[4] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , spcw},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , spccw},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , spstp},
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , sporn}
+};
+
+static const GVector pGPicture00035Vector[4] = {
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GDesign pGPicture00036Design[2] = {
+	{{ FILL_BACK_COLOR , RGB32(192,192,192), RGB32(192,192,192)} , toolch},
+	{{ NO_DRAW , RGB32(0,173,170), RGB32(0,173,170)} , Background}
+};
+
+static const GVector pGPicture00036Vector[2] = {
+	{0 , 0, 1, 10000, 100},
+	{0 , 0, 1, 10000, 100}
+};
+
+static const GPicturePropertyEx pGPicturepProperty[8] =
+{
+
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00005, 509, 0, 130, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00005FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 1, (GDesign*)pGPicture00005Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00005Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00030, 2, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00030FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 7, (GDesign*)pGPicture00030Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00030Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00031, 34, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00031FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 2, (GDesign*)pGPicture00031Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00031Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00032, 66, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00032FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 2, (GDesign*)pGPicture00032Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00032Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00033, 98, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00033FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 2, (GDesign*)pGPicture00033Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00033Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00034, 130, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00034FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 2, (GDesign*)pGPicture00034Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00034Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00035, 162, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00035FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 4, (GDesign*)pGPicture00035Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00035Vector, GPCTR_EFFECT_NONE, GPCTR_EFFECT_NONE, 100, 0} ,
+	{{{{GPICTURE, GCAlarmhelp::GPICTURE00036, 194, 0, 30, 30, GW_STYLE_CAPTION | GW_STYLE_VISIBLE, (GFocusInformation*)&pGPicture00036FocusInformation}}, 0,{RGB32(0,0,0), GCAPTION_POS_CENTER, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00000, 0, GPCTR_DISP_IMAGE, 2, (GDesign*)pGPicture00036Design,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}, (GVector*)pGPicture00036Vector, GPCTR_EFFECT_SHAKEIN, GPCTR_EFFECT_NONE, 100, 0}
+};
+static const GTextBoxProperty pGTextBoxpProperty[1] =
+{
+
+	{{{GTEXTBOX, GCAlarmhelp::GTEXTBOX00004, 303, 30, 336, 20, GW_STYLE_CAPTION | GW_STYLE_VISIBLE | GW_STYLE_ENABLE, (GFocusInformation*)&pGTextBox00004FocusInformation}}, ID_STRING00033A,{RGB32(255,0,0), GCAPTION_POS_LEFT, GCAPTION_POS_CENTER, 0, 0, 0, 0}, ID_FONT00034, 0, RGB32(239,239,239), RGB32(255,255,255), RGB32(239,239,239), GTEXT_TYPE_STRING, 256,{0},{0}, FILL_BACK_COLOR, GFOCUS_EFFECT_NON,{GCSCROLL_SCROLL_DISABLE, GCSCROLL_ONE_SCROLL, 0, 100, 1, GCSCROLL_START_NOW},{GCBLINK_BLINK_DISABLE, GCBLINK_CHANGE_VISIBLE_STRING, RGB32(255,255,255)}}
+};
+
+static GPropertyInfo pGPropertyInfo[27] =
+{
+	{NULL, {0, 0}},
+	{(void *)&pGNXAlarmMessagepProperty[0], {4, 56}},
+	{(void *)&pGNXTimepProperty[0], {4, 64}},
+	{(void *)&pGNXMonitorStatuspProperty[0], {4, 76}},
+	{(void *)&pGLabelpProperty[0], {4, 68}},
+	{(void *)&pGTextBoxpProperty[0], {4, 100}},
+	{(void *)&pGPicturepProperty[0], {4, 90}},
+	{(void *)&pGHtmlBrowserpProperty[0], {4, 88}},
+	{(void *)&pGButtonpProperty[0], {4, 136}},
+	{(void *)&pGButtonpProperty[1], {4, 136}},
+	{(void *)&pGButtonpProperty[2], {4, 136}},
+	{(void *)&pGButtonpProperty[3], {4, 136}},
+	{(void *)&pGButtonpProperty[4], {4, 136}},
+	{(void *)&pGButtonpProperty[5], {4, 136}},
+	{(void *)&pGButtonpProperty[6], {4, 136}},
+	{(void *)&pGButtonpProperty[7], {4, 136}},
+	{(void *)&pGButtonpProperty[8], {4, 136}},
+	{(void *)&pGButtonpProperty[9], {4, 136}},
+	{(void *)&pGLabelpProperty[1], {4, 68}},
+	{(void *)&pGInputBoxpProperty[0], {4, 112}},
+	{(void *)&pGPicturepProperty[1], {4, 90}},
+	{(void *)&pGPicturepProperty[2], {4, 90}},
+	{(void *)&pGPicturepProperty[3], {4, 90}},
+	{(void *)&pGPicturepProperty[4], {4, 90}},
+	{(void *)&pGPicturepProperty[5], {4, 90}},
+	{(void *)&pGPicturepProperty[6], {4, 90}},
+	{(void *)&pGPicturepProperty[7], {4, 90}},
+};
+
+static const GBaseWindowProperty *pProperty[27] =
+{
+	(const GBaseWindowProperty*) NULL,
+	(const GBaseWindowProperty*) &pGNXAlarmMessagepProperty[0],
+	(const GBaseWindowProperty*) &pGNXTimepProperty[0],
+	(const GBaseWindowProperty*) &pGNXMonitorStatuspProperty[0],
+	(const GBaseWindowProperty*) &pGLabelpProperty[0],
+	(const GBaseWindowProperty*) &pGTextBoxpProperty[0],
+	(const GBaseWindowProperty*) &pGPicturepProperty[0],
+	(const GBaseWindowProperty*) &pGHtmlBrowserpProperty[0],
+	(const GBaseWindowProperty*) &pGButtonpProperty[0],
+	(const GBaseWindowProperty*) &pGButtonpProperty[1],
+	(const GBaseWindowProperty*) &pGButtonpProperty[2],
+	(const GBaseWindowProperty*) &pGButtonpProperty[3],
+	(const GBaseWindowProperty*) &pGButtonpProperty[4],
+	(const GBaseWindowProperty*) &pGButtonpProperty[5],
+	(const GBaseWindowProperty*) &pGButtonpProperty[6],
+	(const GBaseWindowProperty*) &pGButtonpProperty[7],
+	(const GBaseWindowProperty*) &pGButtonpProperty[8],
+	(const GBaseWindowProperty*) &pGButtonpProperty[9],
+	(const GBaseWindowProperty*) &pGLabelpProperty[1],
+	(const GBaseWindowProperty*) &pGInputBoxpProperty[0],
+	(const GBaseWindowProperty*) &pGPicturepProperty[1],
+	(const GBaseWindowProperty*) &pGPicturepProperty[2],
+	(const GBaseWindowProperty*) &pGPicturepProperty[3],
+	(const GBaseWindowProperty*) &pGPicturepProperty[4],
+	(const GBaseWindowProperty*) &pGPicturepProperty[5],
+	(const GBaseWindowProperty*) &pGPicturepProperty[6],
+	(const GBaseWindowProperty*) &pGPicturepProperty[7]
+};
+

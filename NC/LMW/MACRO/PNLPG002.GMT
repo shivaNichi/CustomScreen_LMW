@@ -1,0 +1,105 @@
+$DATETIME 2020/04/17 13:34.29
+$main-OnClick
+GCSChangeActiveFocus(-1, "KeyAction");
+$End
+
+
+$KeyAction-OnCreate
+GMEM mem;      
+GMEM mem1;
+    mem = GMEMCreate("GMEM13",9);
+mem1=GMEMCreate("GMEM15",9);
+    GMEMSetLong(mem, 0, 0);   
+GMEMSetLong(mem1,0,0);
+    GCSChangeActiveFocus(-1, "KeyAction");
+$End
+$KeyAction-OnDelete
+GMEM mem;
+    mem = GMEMSelect("GMEM13");
+GMEM mem1;
+    GMEMDelete(mem);
+GMEMDelete(mem1);
+$End
+
+$KeyAction-OnKeyPress
+long _lMainKey; 
+ long _lShiftKey;
+ long butstat;
+  GMEM mem;
+GMEM mem1;
+ mem = GMEMSelect("GMEM13");
+ mem1= GMEMSelect("GMEM15");
+ _lShiftKey = LUPARAM & H1;
+  _lMainKey=LLPARAM;
+  
+GMEM sta;
+GMEM sta1;
+     long NVal;
+long NVal1;
+sta = GMEMCreate("GMEM63", 4);
+GCSNCPLCButtonGetDeviceVal(-1,"status",0,sta);
+NVal=GMEMGetLong(sta,0);
+sta1 = GMEMCreate("GMEM83", 4);
+GCSNCPLCButtonGetDeviceVal(-1,"status1",0,sta1);
+NVal1=GMEMGetLong(sta1,0);
+
+    'Go back CNC Function
+    if((LLPARAM == 112) && (_lShiftKey == 1)) 'Go to [Monitr] Function
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 0);
+        GCSGEShowPanel(1000);
+    elseif((LLPARAM == 113) && (_lShiftKey == 1)) 'Go to [Setup] Function
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 0);
+        GCSGEShowPanel(2000);
+    elseif((LLPARAM == 114) && (_lShiftKey == 1)) 'Go to [Edit] Function
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 0);
+        GCSGEShowPanel(3000);
+    elseif((LLPARAM == 115) && (_lShiftKey == 1)) 'Go to [Diagn] Function
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 0);
+        GCSGEShowPanel(4000);
+    elseif((LLPARAM == 116) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 0);
+        GCSGEShowPanel(5000);
+    elseif((LLPARAM == 121) && (_lShiftKey == 1)) 'Go to [Mainte] Function
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 0);
+         GCSGEShowPanel(1000);
+     elseif( (_lMainKey==123)); 
+    GcsGeshowpanel(1);
+    elseif( (_lMainKey==121)); 
+        GcsGeshowpanel(0);
+    elseif( (_lMainKey==112)); 
+        GcsGeshowpanel(2);
+    elseif( (_lMainKey==113)); 
+        GcsGeshowpanel(3);
+     elseif( (_lMainKey==115)); 
+        GcsGeshowpanel(6);
+      elseif( (_lMainKey==116));
+        GCSNCPLCButtonSetDeviceVal(-1, "BUT1", 0, 1);
+        GcsGeshowpanel(19);
+        elseif( (_lMainKey==117)); 
+        GcsGeshowpanel(6500);
+      elseif( (_lMainKey==118)); 
+        GcsGeshowpanel(9);
+       elseif( (_lMainKey==119)); 
+        GcsGeshowpanel(27);
+       elseif( (_lMainKey==120)); 
+        GcsGeshowpanel(8000);
+     endif
+    if(NVal==1); 
+    if(_lMainKey==114)
+        GcsGeshowpanel(7000);
+     elseif(NVal==0); 
+      if(_lMainKey==114)
+        GcsGeshowpanel(0);
+endif
+endif
+endif
+  if(NVal1==1); 
+    if(_lMainKey==119)
+        GcsGeshowpanel(024);
+     elseif(NVal1==0); 
+      if(_lMainKey==119)
+        GcsGeshowpanel(0015);
+endif
+endif
+endif
+$End

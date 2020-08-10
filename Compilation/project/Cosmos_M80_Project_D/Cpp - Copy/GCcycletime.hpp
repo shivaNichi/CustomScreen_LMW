@@ -1,0 +1,81 @@
+#if !defined _GCCYCLETIME_HPP_
+#define _GCCYCLETIME_HPP_
+#include "genifa.h"
+#include "GWin.h"
+#include "GCPanel.hpp"
+
+
+class GCcycletime : public GCPanel
+{
+public:
+
+	//{{CONTROL_ID
+	enum {
+		GBUTTON00014 = 14,
+		GBUTTON00015 = 15,
+		GBUTTON00016 = 16,
+		GBUTTON00017 = 17,
+		GBUTTON00018 = 18,
+		GBUTTON00019 = 19,
+		GBUTTON00020 = 20,
+		GBUTTON00021 = 21,
+		GBUTTON00022 = 22,
+		GBUTTON00023 = 23,
+		GLABEL00003 = 3,
+		GLABEL00030 = 30,
+		GLABEL00031 = 31,
+		GLABEL00032 = 32,
+		GLABEL00033 = 33,
+		GLABEL00038 = 38,
+		GNCDATATEXTBOX00034 = 34,
+		GNCDATATEXTBOX00035 = 35,
+		GNCDATATEXTBOX00036 = 36,
+		GNCDATATEXTBOX00037 = 37,
+		GNCDATATEXTBOX00039 = 39,
+		GNCDATATEXTBOX00043 = 43,
+		GNCDATATEXTBOX00044 = 44,
+		GNCDATATEXTBOX00045 = 45,
+		GNCDATATEXTBOX00046 = 46,
+		GNCDATATEXTBOX00047 = 47,
+		GNXALARMMESSAGE00000 = 0,
+		GNXCYCLETIME00042 = 42,
+		GNXMONITORSTATUS00002 = 2,
+		GNXTIME00001 = 1,
+		GPICTURE00005 = 5,
+		GPICTURE00049 = 49,
+		GPICTURE00050 = 50,
+		GPICTURE00051 = 51,
+		GPICTURE00052 = 52,
+		GPICTURE00053 = 53,
+		GPICTURE00054 = 54,
+		GPICTURE00055 = 55,
+		GSRECT00048 = 48,
+		GSRECT00041 = 41,
+		GSRECT00040 = 40,
+		GTEXTBOX00004 = 4,
+	};
+	//}}CONTROL_ID
+
+	//{{PUBLIC_METHOD
+	GCcycletime();
+	virtual ~GCcycletime();
+
+	virtual short CreateChildren();
+	virtual GPropertyInfo* GetPropertyInfo(const GBaseWindowProperty* pImport, unsigned short* pGPropertyInfoCnt);
+	//}}PUBLIC_METHOD
+	
+	//{{CALLBACK_METHOD
+	//}}CALLBACK_METHOD
+
+protected:
+	//{{PROTECTED_METHOD
+	GCDefCBMP()
+	//}}PROTECTED_METHOD
+};
+
+extern "C"{
+void GCIDeleteGCcycletime( GBaseObject *pObject );
+short GCINewGCcycletime( GBaseObject *pObject );
+}
+#endif /* _GCCYCLETIME_HPP_ */
+
